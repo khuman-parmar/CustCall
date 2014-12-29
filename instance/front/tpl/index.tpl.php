@@ -11,8 +11,6 @@
     <link href="<?php print _MEDIA_URL ?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-	<!-- Font Awesome -->
-	<link href="<?php print _MEDIA_URL ?>css/font-awesome.min.css" rel="stylesheet">
 	
 	<!-- Color box -->
 	<link href="<?php print _MEDIA_URL ?>css/colorbox/colorbox.css" rel="stylesheet">
@@ -50,15 +48,15 @@
 		</div>
 		<div class="theme-box">
 			<a class="theme-color" style="background:#323447" id="default"></a>
-			<a class="theme-color" style="background:#efefef" id="skin-1"></a>
-			<a class="theme-color" style="background:#a93922" id="skin-2"></a>
+			<a class="theme-color" style="background:#3c8dbc" id="skin-1"></a>
+			<a class="theme-color" style="background:#3c8dbc" id="skin-2"></a>
 			<a class="theme-color" style="background:#3e6b96" id="skin-3"></a>
 			<a class="theme-color" style="background:#635247" id="skin-4"></a>
 		</div>
 	</div><!-- /theme-setting -->
 
 	<div id="wrapper" class="preload">
-		<div id="top-nav" class="skin-2 fixed">
+		<div id="top-nav" class="skin-1 fixed">
 			<button type="button" class="navbar-toggle pull-left" id="sidebarToggle">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -257,10 +255,10 @@
 			</ul>
 		</div><!-- /top-nav-->
 		
-		<aside class="skin-2 fixed">
+		<aside class="skin-1 fixed">
 			<div class="brand">
-				<span>Endless</span>
-				<span class="text-toggle"> Admin</span>
+				<span>Cust</span>
+				<span class="text-toggle">Call</span>
 			</div><!-- /brand -->					
 			<div class="sidebar-inner">
 				<div class="size-toggle">
