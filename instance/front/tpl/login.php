@@ -2,7 +2,7 @@
 <div class="login-wrapper" style="height:500px;width:500px;margin-left:400px;">
 	    <div class="text-center">
 		<h2 class="fadeInUp animation-delay8" style="font-weight:bold">
-		    <span class="text-success">Endless</span> <span style="color:#ccc; text-shadow:0 1px #fff">Admin</span>
+		    <span class="text-success">Cust</span> <span style="color:#ccc; text-shadow:0 1px #fff">Call</span>
 		</h2>
 	    </div>
 	    <div class="login-widget animation-delay1">	
