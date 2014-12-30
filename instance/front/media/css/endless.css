@@ -274,6 +274,7 @@
     -moz-box-shadow: 0 1px 0 #ffffff;
     -webkit-box-shadow: 0 1px 0 #ffffff;
     text-shadow: 0 1px #ffffff;
+	margin-left:185px;
 }
 .breadcrumb li {
     line-height: 27px;
@@ -1093,7 +1094,7 @@ a.list-group-item {
 #main-container {
     position: relative;
     min-height: 800px;
-    padding-top: 45px;
+    
     margin-left: 180px;
     transition: margin-left 0.5s ease;
     -webkit-transition: margin-left 0.5s ease;
