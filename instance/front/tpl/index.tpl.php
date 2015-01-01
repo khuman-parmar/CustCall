@@ -9,6 +9,7 @@
 
         <!-- Bootstrap core CSS -->
         <link href="<?php print _MEDIA_URL ?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php print _MEDIA_URL ?>bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 
@@ -17,26 +18,26 @@
 
         <!-- Morris -->
         <link href="<?php print _MEDIA_URL ?>css/morris.css" rel="stylesheet"/>	
-
+        
         <!-- Endless -->
         <link href="<?php print _MEDIA_URL ?>css/endless.css" rel="stylesheet">
         <link href="<?php print _MEDIA_URL ?>css/endless-skin.css" rel="stylesheet">
+       <link  href="<?php print _MEDIA_URL ?>css/jquery.dataTables_themeroller.css" rel="stylesheet">
 
     </head>
 
     <body class="overflow-hidden">
         <div class="">
-           
+
             <?php if ($no_visible_elements) : ?>
                 <?php include $modulePage; ?>
             <?php else: ?>
 
                 <?php
                 if ($_SESSION['user']['user_name'] != '') :
-                    if ($modulePage != 'landing.php'):
-                        include_once('left.php');
-                        include "breadcrumb.php";
-                    endif;
+
+                    include_once('left.php');
+                    include "breadcrumb.php";
 
                 endif;
                 ?>
@@ -51,7 +52,7 @@
             <?php endif; ?>
         </div>
         <script src="//code.jquery.com/jquery.js"></script>
-
+		
         <?php include "scripts.php"; ?>
         <?php include $jsInclude; ?>
         <a href="" id="scroll-to-top" class="hidden-print"><i class="fa fa-chevron-up"></i></a>

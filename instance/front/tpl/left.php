@@ -279,169 +279,71 @@
 								<span class="menu-hover"></span>
 							</a>
 						</li>
+						
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<span class="menu-icon">
-									<i class="fa fa-tag fa-lg"></i> 
-								</span>
-								<span class="text">
-									Component
-								</span>
-								<span class="badge pull-right">9</span>
-								<span class="menu-hover"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="<?php l('ui_element') ?>">
-										UI Features
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('button') ?>">
-										Button & Icons
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('tab') ?>">
-										Tab
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('ui_element') ?>">
-										Nestable List
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('calendar') ?>">
-										Calendar
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('table') ?>">
-										Table
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('widget') ?>">
-										Widget
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('form_element') ?>">
-										Form Element
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('form_wizard') ?>">
-										Form Wizard
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">
-								<span class="menu-icon">
-									<i class="fa fa-file-text fa-lg"></i> 
-								</span>
-								<span class="text">
-									Page
-								</span>
-								<span class="menu-hover"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="<?php print _U ?>?logout=1">
-										Sign in
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('signup') ?>">
-										Sign up
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('profile') ?>">
-										Profile
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('blog') ?>">
-										Blog
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('single_post') ?>">
-										Single Post
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('landing') ?>">
-										Landing
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('pricing') ?>">
-										Priciing table
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('invoice') ?>">
-										Invoice
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('404') ?>">
-										Error 404
-									</a>
-								</li>
-								<li>
-									<a href="<?php l('blank') ?>">
-										Blank
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="<?php l('timeline') ?>">
+							<a href="<?php l('schedule_patient') ?>">
 								<span class="menu-icon">
 									<i class="fa fa-clock-o fa-lg"></i> 
 								</span>
 								<span class="text">
-									Timeline
+									Schedule Patient
 								</span>
 								<span class="menu-hover"></span>
 							</a>
 						</li>
+						
 						<li>
-							<a href="<?php l('gallery') ?>">
-								<span class="menu-icon">
-									<i class="fa fa-picture-o fa-lg"></i> 
-								</span>
-								<span class="text">
-									Gallery
-								</span>
-								<span class="menu-hover"></span>
-							</a>
-						</li>
-						<li>
-							<a href="<?php l('inbox') ?>">
+							<a href="<?php l('schedule_message') ?>">
 								<span class="menu-icon">
 									<i class="fa fa-envelope fa-lg"></i> 
 								</span>
 								<span class="text">
-									Inbox
+									Schedule Message
 								</span>
-								<span class="badge badge-danger pull-right">4</span>
+								
 								<span class="menu-hover"></span>
 							</a>
 						</li>
 						<li>
-							<a href="<?php l('contact') ?>">
+							<a href="<?php l('schedule_call') ?>">
 								<span class="menu-icon">
 									<i class="fa fa-phone fa-lg"></i> 
 								</span>
 								<span class="text">
-									Contact
+									Schedule Call
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+                                                <li>
+							<a href="<?php l('notification') ?>">
+								<span class="menu-icon">
+									<i class="fa fa-comments-o fa-lg"></i> 
+								</span>
+								<span class="text">
+									Notification
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+                                                <li>
+							<a href="<?php l('import_patient') ?>">
+								<span class="menu-icon">
+									<i class="fa fa-download fa-lg"></i> 
+								</span>
+								<span class="text">
+									Import CSV
+								</span>
+								<span class="menu-hover"></span>
+							</a>
+						</li>
+                                                <li>
+							<a href="<?php l('csv_user_list') ?>">
+								<span class="menu-icon">
+									<i class="fa fa-th-list fa-lg"></i> 
+								</span>
+								<span class="text">
+									Patient List
 								</span>
 								<span class="menu-hover"></span>
 							</a>
@@ -465,7 +367,7 @@
 						<strong class="text-danger">Endless</strong> Admin
 					</span>
 					<p class="no-margin">
-						&copy; 2013 <strong>Endless Admin</strong>. ALL Rights Reserved. 
+						&copy; 2015 <strong>CustCall</strong>. ALL Rights Reserved. 
 					</p>
 				</div><!-- /.col -->
 			</div><!-- /.row-->

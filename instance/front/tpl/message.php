@@ -1,33 +1,36 @@
-<?php if ($error || (isset($_SESSION['error_msg']) && $_SESSION['error_msg'] != '')): ?>
-    <?php
-    if (isset($_SESSION['error_msg']) && $_SESSION['error_msg'] != '') {
-        $error = $_SESSION['error_msg'];
-        $_SESSION['error_msg'] = '';
-        unset($_SESSION['error_msg']);
+<?php
+
+include _PATH . "/Services/Twilio.php";
+
+$data = Getdata();
+$AccountSid = _escape($data['account_sid']);
+$AuthToken = _escape($data['auth_token']);
+
+$client = new Services_Twilio($AccountSid, $AuthToken);
+$people = array(
+    $message_data['phno'] => $message_data['name'],
+);
+
+$response = array();
+
+try {
+    foreach ($people as $number => $name) {
+        $sms = $client->account->messages->sendMessage(
+                $data['phone_no'], $number, "{$message_data['message_body']}");
+        //  echo "Message Sent Successfully to $name";
+        $response['msg'] = '1';
+        qu('scheduled_patient', array('no_of_messages' => $message_data['no_of_messages'] + 1), " id = '{$message_data['id']}'  ");
+
+        qi('conversion_history', array(
+        'patient_id' => $message_data['id'],
+        'patient_name' => $message_data['name'],
+        'type' => 'Message',
+        'date' => date('Y-m-d'),
+        'message' => $message_data['message_body']
+        ));
     }
-    ?>
-    <div class="bottom-message alert-error" id="error_msg_div">
-        <strong>Sorry!</strong> &nbsp;&nbsp;<?php print $error ?>
-    </div>
-<?php endif; ?>
-
-<?php if ($greetings || (isset($_SESSION['greetings_msg']) && $_SESSION['greetings_msg'] != '')): ?>
-    <?php
-    if (isset($_SESSION['greetings_msg']) && $_SESSION['greetings_msg'] != '') {
-        $greetings = $_SESSION['greetings_msg'];
-        $_SESSION['greetings_msg'] = '';
-        unset($_SESSION['greetings_msg']);
-    }
-    ?>
-    <div class="bottom-message alert-success" id="success_msg_div">
-        <strong>Success!</strong> &nbsp;&nbsp;<?php print $greetings ?>
-    </div>
-<?php endif; ?>
-
-
-<div style="display:none;" class="bottom-message alert-error" id="error_msg_jquery">
-    <strong>Sorry!</strong> &nbsp;&nbsp;<span id="error_msg_content"></span>
-</div>
-<div style="display:none;" class="bottom-message alert-success" id="success_msg_jquery">
-    <strong>Success!</strong> &nbsp;&nbsp;<span id="success_msg_content"></span>
-</div>
+} catch (Exception $e) {
+//      echo 'Sorry!.. Your Message Failed PlZ Check This Error' . $e->getMessage();
+    $response['msg'] = '2';
+}
+print json_encode($response);

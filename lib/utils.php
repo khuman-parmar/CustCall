@@ -307,3 +307,6 @@ function _resolvePackaging($qty) {
     }
     return $label;
 }
+ function Getdata() {
+        return qs("SELECT * FROM config");
+    }
